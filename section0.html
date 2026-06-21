@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>0. 모코코 베이스 캠프 가이드 | 2026 썸머 로아온 뉴비/복귀 가이드</title>
+    <!-- no-flash theme: MUST run before stylesheet so dark readers never see a white flash on navigation -->
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem('theme');
+                var d = s ? s : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', d);
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="section">
+
+    <!-- 상단바: 워드마크 · 검색 · breadcrumb · 테마 토글 -->
+    <header class="topbar">
+        <button class="drawer-toggle" id="drawerToggle" aria-label="섹션 목차 열기" aria-expanded="false">☰</button>
+        <a class="wordmark" href="index.html">
+            <span class="wordmark-mark">로아온 가이드</span><span class="wordmark-sub">2026 썸머</span>
+        </a>
+        <button class="search-trigger search-trigger--bar" data-search-open aria-label="검색 열기">
+            <span class="search-ico" aria-hidden="true">🔍</span><span class="search-label">검색</span><kbd class="search-kbd">⌘K</kbd>
+        </button>
+        <nav class="breadcrumb" aria-label="현재 위치"><span class="crumb-section">섹션 0 모코코 베이스 캠프 가이드</span><span class="crumb-sep" style="visibility:hidden">›</span><span class="crumb-current"></span></nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="라이트/다크 테마 전환">
+            <span class="theme-ico theme-ico--sun" aria-hidden="true">☀</span>
+            <span class="theme-ico theme-ico--moon" aria-hidden="true">☾</span>
+        </button>
+    </header>
+
+    <div class="scrim" id="drawerScrim" hidden></div>
+
+    <div class="layout layout-section">
+        <!-- Zone A: 전역 0–9 스파인 (좌) -->
+        <aside class="rail rail-left" id="railLeft" aria-label="전역 목차">
+            <button class="search-trigger search-trigger--rail" data-search-open aria-label="검색 열기">
+                <span class="search-ico" aria-hidden="true">🔍</span><span class="search-label">검색</span><kbd class="search-kbd">⌘K</kbd>
+            </button>
+            <nav class="spine" aria-label="섹션 0–9">
+                <a class="spine-row active" href="section0.html" style="--tier: var(--tier-common)"><span class="spine-badge">00</span><span class="spine-label">모코코 베이스 캠프 가이드</span></a>
+                <a class="spine-row" href="section1.html" style="--tier: var(--tier-uncommon)"><span class="spine-badge">01</span><span class="spine-label">공식 게임 가이드</span></a>
+                <a class="spine-row" href="section2.html" style="--tier: var(--tier-rare)"><span class="spine-badge">02</span><span class="spine-label">인게임 설정</span></a>
+                <a class="spine-row" href="section3.html" style="--tier: var(--tier-heroic)"><span class="spine-badge">03</span><span class="spine-label">일일 콘텐츠</span></a>
+                <a class="spine-row" href="section4.html" style="--tier: var(--tier-legendary)"><span class="spine-badge">04</span><span class="spine-label">주간 콘텐츠</span></a>
+                <a class="spine-row" href="section5.html" style="--tier: var(--tier-relic)"><span class="spine-badge">05</span><span class="spine-label">캘린더 콘텐츠</span></a>
+                <a class="spine-row" href="section6.html" style="--tier: var(--tier-ancient)"><span class="spine-badge">06</span><span class="spine-label">골드 수급처</span></a>
+                <a class="spine-row" href="section7.html" style="--tier: var(--tier-esther)"><span class="spine-badge">07</span><span class="spine-label">스펙업</span></a>
+                <a class="spine-row" href="section8.html" style="--tier: var(--tier-legendary)"><span class="spine-badge">08</span><span class="spine-label">내실</span></a>
+                <a class="spine-row" href="section9.html" style="--tier: var(--tier-ancient)"><span class="spine-badge">09</span><span class="spine-label">외부 사이트</span></a>
+            </nav>
+            <div class="spine-progress" aria-hidden="true"><span id="progressBar"></span></div>
+        </aside>
+
+        <!-- Zone: 본문 (중앙, 유일하게 스크롤되는 컬럼) -->
+        <main class="content main-content" id="content">
+                        <div class="section-container">
+                <div class="chapter-head"><span class="chapter-chip" aria-hidden="true">00</span><h1 class="main-title" id="section0">모코코 베이스 캠프 가이드(업데이트 예정)</h1></div>
+                <div class="card">
+                    <h2  class="sub-title" id="0-쿠폰-입력하기">0. 쿠폰 입력하기</h2>
+                    <p></p>
+                    <p>이벤트 쿠폰을 입력하고 보상을 받습니다. 홈페이지에서 확인할 수 있고 계정당 1회 입력 가능합니다.</p>
+                    <img alt="이미지 205" class="full-size lazy-scroll-img" src="images/0205.png" />
+                    <p>인게임 상단 쿠폰 버튼이나</p>
+                    <img alt="이미지 206" class="full-size lazy-scroll-img" src="images/0206.png" />
+                    <img alt="이미지 207" class="full-size lazy-scroll-img" src="images/0207.png" />
+                    <p>홈페이지 웹샵 - 쿠폰에서 입력 가능합니다.</p>
+                    <img alt="이미지 208" class="full-size lazy-scroll-img" src="images/0208.png" />
+                    <p>2026로아온썸머감사선물 < 입력하시면 됩니다.</p>
+                    <img alt="이미지 209" class="half-size lazy-scroll-img" src="images/0209.png" />
+                    <p>"<span class="tier tier-ancient">고대</span> 코어 선택 상자","<span class="tier tier-relic">유물</span> 전투 각인서 선택 주머니","도약의 <span class="tier tier-legendary">전설</span> 카드 선택 팩"을 제외한 보상은 필요에 따라 자유롭게 사용하셔도 됩니다.</p>
+                    <p>"<span class="tier tier-ancient">고대</span> 젬 선택 상자"는 딜러, 서폿에 맞춰서 받으시면 됩니다. </p>
+                    <p>"<span class="tier tier-ancient">고대</span> 코어 선택 상자","<span class="tier tier-relic">유물</span> 전투 각인서 선택 주머니","도약의 <span class="tier tier-legendary">전설</span> 카드 선택 팩" 는 반드시 고인물들에게 물어보고 사용하시기 바랍니다.</p>
+                    <p>특히 "<span class="tier tier-ancient">고대</span> 코어 선택 상자"는 이번에 처음 쿠폰으로 뿌리는 보상으로 인게임 내에서 확정으로 얻을 수 있는 방법이 단 하나 뿐입니다.</p>
+                    <p>이론상 운이 없어서 <span class="tier tier-ancient">고대</span> 코어를 먹지 못한다면 6개의 <span class="tier tier-ancient">고대</span> 코어 선택 상자가 필요하기 때문에 반드시 사용하지 말고 기다리시기 바랍니다.</p>
+                </div>
+                <div class="card">
+                    <h2  class="sub-title" id="1-점핑권-사용하기">1. 점핑권 사용하기</h2>
+                    <h3  class="section-header" id="이벤트-점핑권">이벤트 점핑권</h3>
+                    <div class="image-placeholder">
+                        <span>이미지 준비 중</span>
+                    </div>
+                    <p>이번 로아온에서 모든 직업에 사용가능한 점핑권을 명의당 1회 기본으로 제공하고 신직업 차원술사에만 사용 가능한 1장을 추가로 제공해 총 2장을 받을 수 있습니다.</p>
+                    <p>사용 시 1660레벨로 캐릭터가 성장하고 운명의 궤적 퀘스트까지 완료가 된 상태가 됩니다.</p>
+                    <p>뉴비들이 자주 오해를 하는데 점핑권을 사용한 캐릭터에 모코코 베이스 캠프를 설정할 필요는 없습니다.</p>
+                    <p>모코코 베이스 캠프를 지정하는 조건이 1660이기 때문에 점핑권을 사용하고 지정을 하는 방식으로 오해를 하지만 원정대에 점핑권을 사용하지 않고도 1660 이상인 캐릭터가 있다면 이 캐릭터에 모코코 베이스 캠프를 지정할 수 있습니다.</p>
+                    <h3  class="section-header" id="부계정에-사용">부계정에 사용?</h3>
+                    <div class="image-placeholder">
+                        <span>이미지 준비 중</span>
+                    </div>
+                    <p>이벤트 점핑권은 일반 트리시온 패스(과금 점핑권)과는 다르게 원정대에 해당 레벨까지 퀘스트를 클리어한 캐릭터가 존재하지 않더라도 사용이 가능합니다.</p>
+                    <p>예를들어 쿠르잔 북부 패스를 사용하기 위해서는 쿠르잔 북부까지 퀘스트를 클리어한 캐릭터가 원정대에 존재해야 하는데 이벤트 점핑권은 해당 캐릭터가 없더라도 사용이 가능합니다.</p>
+                    <p>이를 활용해 부계정이나 다른 서버에 캐릭터를 만들 때 이벤트 점핑권을 사용하면 직접 메인 퀘스트를 클리어하지 않아도 원정대를 구성할 수 있습니다.</p>
+                    <p>뉴비/복귀라면 아직 부계정을 생각할 단계는 아니지만 게임을 하다보면 결국 6회제한이 걸리게 되고 부계정을 고려하게 될텐데 그럴 때 이벤트 점핑권을 사용하는걸 추천드립니다.</p>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h2  class="sub-title" id="2-모코코-베이스-캠프-캐릭터-설정하기">2. 모코코 베이스 캠프 캐릭터 설정하기</h2>
+                    <br>
+                    <img alt="이미지 210" class="full-size lazy-scroll-img" src="images/0210.png" />
+                    <p>이번 로아온부터 익스프레스가 <strong>모코코 베이스 캠프</strong>로 변경됩니다.</p>
+                    <p>기존의 익스프레스는 뉴비 친화적인 이벤트는 아니였습니다. 아이템만 지급하고 별다른 가이드 없이 미션을 수행하면 보상을 받는 방식이라서 게임에 익숙하지 않은 뉴비들은 뭘 해야할지 어려움을 겪는 경우가 많았습니다.</p>
+                    <p>이번 모코코 베이스 캠프부터는 단순히 아이템을 지급해주는 것만이 아니라 단계별로 게임에 익숙해질 수 있도록 실제 플레이를 통해 보상을 획득하고 성장 기회를 제공하는 방식으로 변경되었습니다.</p>
+                    <img alt="이미지 211" class="full-size lazy-scroll-img" src="images/0211.png" />
+                    <p>이번 모코코 베이스 캠프는 1단계: 워밍-업! 프로그램 과 2단계: 점프-업! 부스트 로 구성됩니다.</p>
+                    <h3  class="section-header" id="워밍-업-프로그램">워밍-업! 프로그램</h3>
+                    <img alt="이미지 212" class="full-size lazy-scroll-img" src="images/0212.png" />
+                    <img alt="이미지 213" class="full-size lazy-scroll-img" src="images/0213.png" />
+                    <p><strog>워밍-업! 프로그램</strog>은 스토리 팝업북을 통해 스토리를 요약해서 알려주고 직접적인 성장 경험이나 전투 플레이를 통해 게임에 익숙해지게 도와줍니다.</p>
+                    <p>기존처럼 아이템만 제공하고 알아서 진행하는 방식이 아니라 실제 게임 플레이를 진행하면 자동으로 아이템을 세팅해주고 보상을 지급하는 방식으로 4단계에 나눠서 보상을 받을 수 있습니다.</p>
+                    <p>보상으로 1700레벨까지 캐릭터를 성장시켜주며 "카르마", "<span class="tier tier-legendary">전설</span> 코어 세트"를 지급해주면서 낮은 레벨 구간에서 정보를 알아보고 세팅이 필요한 부분을 자동으로 채워주면서 편의성을 크게 높였습니다.</p>
+                    <h3  class="section-header" id="점프-업-부스트">점프-업! 부스트</h3>
+                    <img alt="이미지 214" class="full-size lazy-scroll-img" src="images/0214.png" />
+                    <img alt="이미지 215" class="full-size lazy-scroll-img" src="images/0215.png" />
+                    <p><strog>점프-업! 부스트</strog>는 미션 달성을 통해 추가 보상을 받을 수 있는 방식입니다.</p>
+                    <p>기존의 익스프레스와 비슷한 방식으로 보이지만 익스프레스 미션은 레이드 위주로 수직 컨텐츠에만 집중해서 미션이 있었지만 점프업 부스트는 레이드 외에도 일간 컨텐츠, 이벤트, 수평 컨텐츠 등 다양한 방식으로 미션 포인트를 획득할 수 있기 때문에 훨씬 편하게 미션을 달성할 수 있을것으로 생각됩니다.</p>
+                    <p>점프업 부스트는 1720레벨까지 캐릭터 성장을 지원해줍니다.</p>
+                    <h3  class="section-header" id="차원술사-전용-이벤트">차원술사 전용 이벤트</h3>
+                    <img alt="이미지 216" class="full-size lazy-scroll-img" src="images/0216.png" />
+                    <p>신규 직업 차원술사의 경우 모코코 베이스 캠프를 제외한 보상이 따로 존재합니다. 모코코 베이스 캠프 보상과 같은 보상을 받을 수 있는데 그것과 상관없이 모코코 베이스 캠프를 추가로 설정할 수도 있습니다.</p>
+                    <p>차원술사에 모코코 베이스 캠프를 지정하면 모코코 베이스 캠프 보상을 2번 받게 되는건데 이렇게 되면 보석, <span class="tier tier-legendary">전설</span> 코어, 카르마, 상급재련 재료 등이 중복으로 받게되어 쓸모가 없어집니다.</p>
+                    <p><span class="tier tier-relic">유물</span> 코어 선택 상자가 6개가 되기 때문에 1캐릭터를 빠르게 <span class="tier tier-relic">유물</span> 코어 졸업을 할 수는 있지만 다른 보상들이 뉴비/복귀 유저에게 큰 도움이 되기 때문에 가능하다면 차원 술사가 아닌 다른 캐릭터에 모코코 베이스 캠프를 지정하는걸 추천드립니다.</p>
+                    <p>차원술사 2개를 키워서 보상을 나눠 받는것도 가능합니다만 차원술사 출시 전까지 보상을 받지 못한다는 문제가 있습니다.</p>
+                </div>
+                <div class="card">
+                    <h2  class="sub-title" id="3-모코코-베이스-캠프-미션-클리어">3. 모코코 베이스 캠프 미션 클리어</h2>
+                    <p></p>
+                    <img alt="이미지 218" class="full-size lazy-scroll-img" src="images/0218.png" />
+                    <p>모코코 베이스 캠프 미션을 클리어하고 보상을 받습니다.</p>
+                    <p>워밍-업! 프로그램은 30분 내외의 시간이 소비되는 미션으로 간단하게 클리어하고 보상을 받을 수 있습니다.</p>
+                    <p>점프-업! 부스트는 내실/전투/마하라카 썸머캠프(이벤트) 3종류로 나뉘는 미션을 클리어해서 포인트를 모으고 보상을 받을 수 있습니다.</p>
+                    <p>기존까지의 익스프레스 미션은 레이드 콘텐츠에 집중된 미션들만 있었기 때문에 레이드 콘텐츠에 익숙하지 않은 뉴비 유저들이 어렵게 느끼는 경우가 있었습니다.</p>
+                    <p>점프업 부스트 미션은 전투 외에도 내식, 이벤트 등 다양한 방식으로 포인트를 얻을 수 있기 때문에 레이드에 익숙하지 않더라도 충분히 모든 보상을 받을 수 있으니 천천히 미션을 달성하시면 되겠습니다.</p>
+                </div>
+                <div class="card">
+                    <h2  class="sub-title" id="4-내실-및-배럭-육성">4. 내실 및 배럭 육성</h2>
+                    <p></p>
+                    <p>모코코 베이스 캠프 미션을 다 클리어 했거나 중간에 진행이 불가능한 경우에는 이제 내실 및 배럭 육성을 진행하시면 됩니다.</p>
+                    <p>
+                        내실은 원정대 단위로 공유되는 스펙업 요소로 아크 패시브 포인트, 스킬 포인트, 룬 등 중요한 역할을 하는 스펙업 요소이기 때문에 꾸준히 진행해 주시는 게 좋습니다. 내실 관련해서 자세한 내용은 뒤쪽의
+                        <a href="section8.html">➡️ 내실</a> 부분에 작성했으니 참고하시면 되겠습니다.
+                    </p>
+                    <p>배럭은 본캐릭터의 성장을 돕기 위해 육성하는 부캐릭터를 의미합니다. 로스트아크는 부캐릭터의 재화를 본캐릭터에 몰아줘서 스펙업을 하는 방식이 효율적입니다. 그래서 본캐 육성 후 남는 시간과 재화를 배럭에 투자하는게 매우 효율적이고 게임사에서 장려하는 방식입니다.</p>
+                    <p>로스트아크는 골드 획득 6회 제한이라는 시스템이 있어서 6번째 캐릭터 이후로는 레이드 클리어 시 골드를 획득하지 못합니다. 7번째 캐릭터부터는 골드를 획득할 수 없기 때문에 효율이 급감하니까 배럭은 일단 6개까지만 만드시는걸 추천드립니다.</p>
+                </div>
+                <div class="card">
+                    <h2  class="sub-title" id="5-챌린지-프리미엄">5. 챌린지 프리미엄</h2>
+                    <br>
+                    <div class="image-placeholder">
+                        <span>이미지 준비 중</span>
+                    </div>
+                    <p>챌린지 프리미엄은 과금을 통해 구매할 수 있는 상품으로 모코코 베이스 캠프 미션 클리어 시 추가 보상을 획득할 수 있는 패키지입니다.</p>
+                    <p>보상이 매우 좋은 편이기 때문에 가능하다면 구매를 하는걸 추천드립니다.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Zone B: 이 페이지 h2 목차 (우) -->
+        <aside class="rail rail-right" id="railRight" aria-label="이 페이지 목차">
+            <details class="page-toc" id="pageToc" open>
+                <summary class="page-toc-summary">이 페이지 목차</summary>
+                <ul>
+                <li><a class="page-toc-link" href="#0-쿠폰-입력하기">0. 쿠폰 입력하기</a></li>
+                <li><a class="page-toc-link" href="#1-점핑권-사용하기">1. 점핑권 사용하기</a></li>
+                <li><a class="page-toc-link" href="#2-모코코-베이스-캠프-캐릭터-설정하기">2. 모코코 베이스 캠프 캐릭터 설정하기</a></li>
+                <li><a class="page-toc-link" href="#3-모코코-베이스-캠프-미션-클리어">3. 모코코 베이스 캠프 미션 클리어</a></li>
+                <li><a class="page-toc-link" href="#4-내실-및-배럭-육성">4. 내실 및 배럭 육성</a></li>
+                <li><a class="page-toc-link" href="#5-챌린지-프리미엄">5. 챌린지 프리미엄</a></li>
+                </ul>
+                </details>
+        </aside>
+    </div>
+
+    <!-- ⌘K 커맨드 팔레트 -->
+    <dialog class="search-dialog" id="searchDialog" aria-label="가이드 검색">
+        <form class="search-form" method="dialog">
+            <span class="search-dialog-ico" aria-hidden="true">🔍</span>
+            <input type="search" id="searchInput" class="search-input" placeholder="섹션·항목 검색…" autocomplete="off" aria-label="검색어" />
+            <button type="submit" class="search-close" aria-label="닫기">esc</button>
+        </form>
+        <ul class="search-results" id="searchResults" role="listbox"></ul>
+        <p class="search-empty" id="searchEmpty" hidden>결과가 없습니다.</p>
+    </dialog>
+
+        <!-- 하단 고정 UI: 맨 위로 + 최종 수정일 -->
+    <div class="fixed-bottom-ui">
+        <ul>
+            <li>
+                <button id="topBtn" type="button">맨 위로</button>
+            </li>
+            <li>
+                <div class="update-date">최종 수정일: 2026. 06. 21</div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        (function () {
+            "use strict";
+
+            /* ---- 테마 토글 ---- */
+            var root = document.documentElement;
+            var themeBtn = document.getElementById('themeToggle');
+            if (themeBtn) {
+                themeBtn.addEventListener('click', function () {
+                    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    root.setAttribute('data-theme', next);
+                    try { localStorage.setItem('theme', next); } catch (e) { }
+                });
+            }
+
+            /* ---- 모바일 드로어 ---- */
+            var drawerBtn = document.getElementById('drawerToggle');
+            var scrim = document.getElementById('drawerScrim');
+            function setDrawer(open) {
+                document.body.classList.toggle('drawer-open', open);
+                if (scrim) scrim.hidden = !open;
+                if (drawerBtn) drawerBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+            if (drawerBtn) drawerBtn.addEventListener('click', function () {
+                setDrawer(!document.body.classList.contains('drawer-open'));
+            });
+            if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+            // 드로어 안의 섹션 링크 클릭 시 닫기
+            document.querySelectorAll('.rail-left a').forEach(function (a) {
+                a.addEventListener('click', function () { setDrawer(false); });
+            });
+
+            /* ---- 진행률 바 (스파인 하단 채움) ---- */
+            var progressBar = document.getElementById('progressBar');
+            function updateProgress() {
+                if (!progressBar) return;
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                progressBar.style.width = (height > 0 ? (winScroll / height) * 100 : 0) + '%';
+            }
+
+            /* ---- 우측 페이지 목차 h2 스크롤스파이 + breadcrumb ---- */
+            var headings = Array.prototype.slice.call(document.querySelectorAll('main.main-content .sub-title'));
+            var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.page-toc-link'));
+            var crumbCurrent = document.querySelector('.breadcrumb .crumb-current');
+            var crumbSep = document.querySelector('.breadcrumb .crumb-sep');
+            // 헤딩은 scroll-margin-top(=topbar 56 + 8 = 64) 위치에 안착하므로, 임계값을
+            // 그보다 약간 크게 잡아야 막 클릭해 도착한 헤딩이 곧바로 active로 판정된다(off-by-one 방지).
+            var topOffset = 96; // topbar + scroll-margin + 여유
+            var activeId = null;
+
+            function syncSpy() {
+                if (!headings.length) return;
+                var current = null;
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= topOffset) {
+                        current = headings[i];
+                    }
+                }
+                var id = current ? current.getAttribute('id') : null;
+                if (id === activeId) return;
+                activeId = id;
+                tocLinks.forEach(function (link) {
+                    link.classList.toggle('active', !!id && link.getAttribute('href') === '#' + id);
+                });
+                if (crumbCurrent) {
+                    crumbCurrent.textContent = current ? current.textContent.trim() : '';
+                    if (crumbSep) crumbSep.style.visibility = current ? 'visible' : 'hidden';
+                }
+            }
+
+            var ticking = false;
+            function onScroll() {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(function () {
+                    updateProgress();
+                    syncSpy();
+                    ticking = false;
+                });
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll, { passive: true });
+            updateProgress();
+            syncSpy();
+
+            /* ---- 이미지 로드 인지 앵커 스크롤 (스크린샷 시프트 방지) ---- */
+            function scrollToTarget(el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', ' ');
+            }
+            document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    var id = this.getAttribute('href').substring(1);
+                    if (!id) return;
+                    var target = document.getElementById(decodeURIComponent(id));
+                    if (!target) return;
+                    e.preventDefault();
+                    var imgs = target.querySelectorAll('.lazy-scroll-img');
+                    if (!imgs.length) { scrollToTarget(target); return; }
+                    var loaded = 0;
+                    function done() { loaded++; if (loaded === imgs.length) scrollToTarget(target); }
+                    imgs.forEach(function (img) {
+                        if (img.complete) { done(); }
+                        else { img.addEventListener('load', done); img.addEventListener('error', done); }
+                    });
+                });
+            });
+
+            /* ---- ⌘K 검색 ---- */
+            var dialog = document.getElementById('searchDialog');
+            var input = document.getElementById('searchInput');
+            var resultsEl = document.getElementById('searchResults');
+            var emptyEl = document.getElementById('searchEmpty');
+            var chunks = null, activeIdx = -1;
+
+            function loadIndex() {
+                if (chunks) return Promise.resolve();
+                return fetch('search-index.json').then(function (r) { return r.json(); })
+                    .then(function (data) { chunks = data; })
+                    .catch(function () { chunks = []; });
+            }
+            function openSearch() {
+                if (!dialog || typeof dialog.showModal !== 'function') return;
+                loadIndex().then(function () {
+                    if (!dialog.open) dialog.showModal();
+                    input.value = '';
+                    render('');
+                    setTimeout(function () { input.focus(); }, 0);
+                });
+            }
+            function hrefOf(c) { return c.anchor ? c.file + '#' + c.anchor : c.file; }
+            function snippet(text, q) {
+                var i = (text || '').toLowerCase().indexOf(q);
+                if (i < 0) return null;
+                var s = Math.max(0, i - 30), e = Math.min(text.length, i + q.length + 40);
+                return {
+                    pre: (s > 0 ? '…' : '') + text.slice(s, i),
+                    hit: text.slice(i, i + q.length),
+                    post: text.slice(i + q.length, e) + (e < text.length ? '…' : '')
+                };
+            }
+            function render(q) {
+                q = q.trim().toLowerCase();
+                resultsEl.innerHTML = '';
+                var items;
+                if (!q) {
+                    items = (chunks || []).slice(0, 10).map(function (c) { return { c: c, snip: null }; });
+                } else {
+                    var scored = [];
+                    (chunks || []).forEach(function (c) {
+                        var inHead = (c.heading || '').toLowerCase().indexOf(q) !== -1;
+                        var inPage = (c.page || '').toLowerCase().indexOf(q) !== -1;
+                        var snip = snippet(c.text, q);
+                        if (inHead || inPage || snip) {
+                            scored.push({ c: c, rank: inHead ? 0 : (inPage ? 1 : 2), snip: snip });
+                        }
+                    });
+                    scored.sort(function (a, b) { return a.rank - b.rank; });
+                    var seen = {}; items = [];
+                    scored.forEach(function (it) {
+                        var h = hrefOf(it.c);
+                        if (!seen[h]) { seen[h] = 1; items.push(it); }
+                    });
+                    items = items.slice(0, 30);
+                }
+                activeIdx = items.length ? 0 : -1;
+                items.forEach(function (it, i) {
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = hrefOf(it.c);
+                    if (i === 0) a.classList.add('active');
+                    var t = document.createElement('span'); t.className = 'res-title';
+                    t.textContent = it.c.heading || it.c.page;
+                    var cx = document.createElement('span'); cx.className = 'res-ctx';
+                    cx.textContent = it.c.page;
+                    a.appendChild(t); a.appendChild(cx);
+                    if (it.snip) {
+                        var sn = document.createElement('span'); sn.className = 'res-snip';
+                        sn.appendChild(document.createTextNode(it.snip.pre));
+                        var mk = document.createElement('mark'); mk.textContent = it.snip.hit;
+                        sn.appendChild(mk);
+                        sn.appendChild(document.createTextNode(it.snip.post));
+                        a.appendChild(sn);
+                    }
+                    li.appendChild(a);
+                    resultsEl.appendChild(li);
+                });
+                emptyEl.hidden = !(q && !items.length);
+            }
+            function move(d) {
+                var links = resultsEl.querySelectorAll('a');
+                if (!links.length) return;
+                links[activeIdx] && links[activeIdx].classList.remove('active');
+                activeIdx = (activeIdx + d + links.length) % links.length;
+                links[activeIdx].classList.add('active');
+                links[activeIdx].scrollIntoView({ block: 'nearest' });
+            }
+            if (dialog) {
+                document.querySelectorAll('[data-search-open]').forEach(function (b) {
+                    b.addEventListener('click', openSearch);
+                });
+                document.addEventListener('keydown', function (e) {
+                    if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); openSearch(); }
+                });
+                input.addEventListener('input', function () { render(input.value); });
+                input.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+                    else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+                    else if (e.key === 'Enter') {
+                        var a = resultsEl.querySelectorAll('a')[activeIdx];
+                        if (a) { e.preventDefault(); window.location.href = a.getAttribute('href'); }
+                    }
+                });
+            }
+
+            /* ---- 맨 위로 ---- */
+            var topBtn = document.getElementById('topBtn');
+            if (topBtn) topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+
+    <script>
+        // 조회수 기록 (기존 동작 보존)
+        fetch('https://script.google.com/macros/s/AKfycbwSqARqOln42Iglcb_HzhlrUqcyaHrsGinaiyh-mplMjHTTGJxO-oR2znPItvYdkyV9/exec')
+            .then(function () { console.log('조회수 기록 성공'); })
+            .catch(function (e) { console.error('기록 실패', e); });
+    </script>
+
+</body>
+
+</html>

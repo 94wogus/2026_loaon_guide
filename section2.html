@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>2. 인게임 설정 | 2026 썸머 로아온 뉴비/복귀 가이드</title>
+    <!-- no-flash theme: MUST run before stylesheet so dark readers never see a white flash on navigation -->
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem('theme');
+                var d = s ? s : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', d);
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="section">
+
+    <!-- 상단바: 워드마크 · 검색 · breadcrumb · 테마 토글 -->
+    <header class="topbar">
+        <button class="drawer-toggle" id="drawerToggle" aria-label="섹션 목차 열기" aria-expanded="false">☰</button>
+        <a class="wordmark" href="index.html">
+            <span class="wordmark-mark">로아온 가이드</span><span class="wordmark-sub">2026 썸머</span>
+        </a>
+        <button class="search-trigger search-trigger--bar" data-search-open aria-label="검색 열기">
+            <span class="search-ico" aria-hidden="true">🔍</span><span class="search-label">검색</span><kbd class="search-kbd">⌘K</kbd>
+        </button>
+        <nav class="breadcrumb" aria-label="현재 위치"><span class="crumb-section">섹션 2 인게임 설정</span><span class="crumb-sep" style="visibility:hidden">›</span><span class="crumb-current"></span></nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="라이트/다크 테마 전환">
+            <span class="theme-ico theme-ico--sun" aria-hidden="true">☀</span>
+            <span class="theme-ico theme-ico--moon" aria-hidden="true">☾</span>
+        </button>
+    </header>
+
+    <div class="scrim" id="drawerScrim" hidden></div>
+
+    <div class="layout layout-section">
+        <!-- Zone A: 전역 0–9 스파인 (좌) -->
+        <aside class="rail rail-left" id="railLeft" aria-label="전역 목차">
+            <button class="search-trigger search-trigger--rail" data-search-open aria-label="검색 열기">
+                <span class="search-ico" aria-hidden="true">🔍</span><span class="search-label">검색</span><kbd class="search-kbd">⌘K</kbd>
+            </button>
+            <nav class="spine" aria-label="섹션 0–9">
+                <a class="spine-row" href="section0.html" style="--tier: var(--tier-common)"><span class="spine-badge">00</span><span class="spine-label">모코코 베이스 캠프 가이드</span></a>
+                <a class="spine-row" href="section1.html" style="--tier: var(--tier-uncommon)"><span class="spine-badge">01</span><span class="spine-label">공식 게임 가이드</span></a>
+                <a class="spine-row active" href="section2.html" style="--tier: var(--tier-rare)"><span class="spine-badge">02</span><span class="spine-label">인게임 설정</span></a>
+                <a class="spine-row" href="section3.html" style="--tier: var(--tier-heroic)"><span class="spine-badge">03</span><span class="spine-label">일일 콘텐츠</span></a>
+                <a class="spine-row" href="section4.html" style="--tier: var(--tier-legendary)"><span class="spine-badge">04</span><span class="spine-label">주간 콘텐츠</span></a>
+                <a class="spine-row" href="section5.html" style="--tier: var(--tier-relic)"><span class="spine-badge">05</span><span class="spine-label">캘린더 콘텐츠</span></a>
+                <a class="spine-row" href="section6.html" style="--tier: var(--tier-ancient)"><span class="spine-badge">06</span><span class="spine-label">골드 수급처</span></a>
+                <a class="spine-row" href="section7.html" style="--tier: var(--tier-esther)"><span class="spine-badge">07</span><span class="spine-label">스펙업</span></a>
+                <a class="spine-row" href="section8.html" style="--tier: var(--tier-legendary)"><span class="spine-badge">08</span><span class="spine-label">내실</span></a>
+                <a class="spine-row" href="section9.html" style="--tier: var(--tier-ancient)"><span class="spine-badge">09</span><span class="spine-label">외부 사이트</span></a>
+            </nav>
+            <div class="spine-progress" aria-hidden="true"><span id="progressBar"></span></div>
+        </aside>
+
+        <!-- Zone: 본문 (중앙, 유일하게 스크롤되는 컬럼) -->
+        <main class="content main-content" id="content">
+                        <div class="section-container">
+                <div class="chapter-head"><span class="chapter-chip" aria-hidden="true">02</span><h1 class="main-title" id="section2">인게임 설정</h1></div>
+                <div class="card">
+                    <p>필수는 아니지만 알아두면 좋은 설정을 알려드립니다.</p>
+                    <hr>
+                    <img alt="이미지 5" class="half-size lazy-scroll-img" src="images/0004.png" />
+                    <p>대미지 폰트 축약 표시 : 적에게 주는 피해량의 크기가 일정 수준이 되면 피해량 수치를 축약해서 출력합니다.</p>
+                    <hr>
+                    <img alt="이미지 6" class="full-size lazy-scroll-img" src="images/0005.png" />
+                    <img alt="이미지 6" class="full-size lazy-scroll-img" src="images/0006.png" />
+                    <p>대미지 폰트 합산 : 하나의 스킬에서 발생하는 대미지 폰트를 합산하여 표시합니다.</p>
+                    <hr>
+                    <img alt="이미지 7" class="full-size lazy-scroll-img" src="images/0007.png" />
+                    <p>스킬 즉시 시전 : 지점 스킬이 시전되는 영역이 표시되지 않고 즉시 스킬이 사용됩니다. 롤 스마트키 생각하시면 됩니다. 배틀아이템이나 생활 스킬 등에도 적용됩니다.</p>
+                    <hr>
+                    <img alt="이미지 8" class="full-size lazy-scroll-img" src="images/0008.png" />
+                    <p>던전 내 연출 자동 스킵 : 파티 던전 또는 레이드 진행 시 스킵 가능한 연출을 자동으로 스킵합니다. 로아는 대부분의 레이드가 중간에 컷신이 나옵니다. 이때 esc 로 컷신을 스킵할 수 있는데 자동으로 스킵해주는 기능입니다.</p>
+                    <hr>
+                    <img alt="이미지 9" class="full-size lazy-scroll-img" src="images/0009.png" />
+                    <p>스킬방향 보정 : 마우스 커서가 적대적 대상 위에 있는 경우 스킬 방향을 보정해주는 옵션입니다. 원하지 않는 방향으로 스킬이 나가는 경우가 생길 수 있으니 끄는게 좋습니다.</p>
+                    <hr>
+                    <img alt="이미지 10" class="full-size lazy-scroll-img" src="images/0010.png" />
+                    <p>펫 표시를 켜놓으면 방해가 되는 경우가 있습니다. 꺼주시는게 좋습니다.</p>
+                    <hr>
+                    <img alt="이미지 11" class="full-size lazy-scroll-img" src="images/0011.png" />
+                    <p>머리위에 체력바가 표시되는 옵션입니다.</p>
+                    <p>플레이어를 켜놓으면 본인의 머리위에 체력바가 표시되어 자신의 체력 상황을 알기 쉬워지고 캐릭터 위치 찾기도 쉬워집니다.</p>
+                    <p>파티원만 켜놓고 공격대원을 꺼놓으면 공대 레이드시 파티원과 공격대원을 쉽게 구분 가능합니다.</p>
+                    <hr>
+                    <img alt="이미지 12" class="full-size lazy-scroll-img" src="images/0012.png" />
+                    <p>전투 이펙트를 전부 켜놓으면 레이드에서 다른 사람의 이펙트 때문에 보스 패턴이 안보이는 경우가 많이 생깁니다.</p>
+                    <p>파티원의 이로운 효과 표시로 설정해놓으면 필요한 이펙트만 보입니다.</p>
+                    <hr>
+                    <img alt="이미지 13" class="full-size lazy-scroll-img" src="images/0013.png" />
+                    <img alt="이미지 14" class="full-size lazy-scroll-img" src="images/0014.png" />
+                    <p>로스트아크는 체력바 위에 버프 아이콘이 출력이 되는데 한번에 알아보기 힘들정도로 많습니다. 그래서 우선 순위 설정을 통해 확인이 필요한 버프를 인지하기 쉽도록 만드는게 좋습니다.</p>
+                    <p>이때 버프 우선 순위는 직업별로 다르기 때문에 직접 찾아보셔서 설정을 하셔야 합니다.</p>
+                    <p>버프 갯수도 최대한 늘려주시고 동시 적용 버프 중첩 표기 역시 해주시는게 좋습니다.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Zone B: 이 페이지 h2 목차 (우) -->
+        <aside class="rail rail-right" id="railRight" aria-label="이 페이지 목차">
+            
+        </aside>
+    </div>
+
+    <!-- ⌘K 커맨드 팔레트 -->
+    <dialog class="search-dialog" id="searchDialog" aria-label="가이드 검색">
+        <form class="search-form" method="dialog">
+            <span class="search-dialog-ico" aria-hidden="true">🔍</span>
+            <input type="search" id="searchInput" class="search-input" placeholder="섹션·항목 검색…" autocomplete="off" aria-label="검색어" />
+            <button type="submit" class="search-close" aria-label="닫기">esc</button>
+        </form>
+        <ul class="search-results" id="searchResults" role="listbox"></ul>
+        <p class="search-empty" id="searchEmpty" hidden>결과가 없습니다.</p>
+    </dialog>
+
+        <!-- 하단 고정 UI: 맨 위로 + 최종 수정일 -->
+    <div class="fixed-bottom-ui">
+        <ul>
+            <li>
+                <button id="topBtn" type="button">맨 위로</button>
+            </li>
+            <li>
+                <div class="update-date">최종 수정일: 2026. 06. 21</div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        (function () {
+            "use strict";
+
+            /* ---- 테마 토글 ---- */
+            var root = document.documentElement;
+            var themeBtn = document.getElementById('themeToggle');
+            if (themeBtn) {
+                themeBtn.addEventListener('click', function () {
+                    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    root.setAttribute('data-theme', next);
+                    try { localStorage.setItem('theme', next); } catch (e) { }
+                });
+            }
+
+            /* ---- 모바일 드로어 ---- */
+            var drawerBtn = document.getElementById('drawerToggle');
+            var scrim = document.getElementById('drawerScrim');
+            function setDrawer(open) {
+                document.body.classList.toggle('drawer-open', open);
+                if (scrim) scrim.hidden = !open;
+                if (drawerBtn) drawerBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+            if (drawerBtn) drawerBtn.addEventListener('click', function () {
+                setDrawer(!document.body.classList.contains('drawer-open'));
+            });
+            if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+            // 드로어 안의 섹션 링크 클릭 시 닫기
+            document.querySelectorAll('.rail-left a').forEach(function (a) {
+                a.addEventListener('click', function () { setDrawer(false); });
+            });
+
+            /* ---- 진행률 바 (스파인 하단 채움) ---- */
+            var progressBar = document.getElementById('progressBar');
+            function updateProgress() {
+                if (!progressBar) return;
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                progressBar.style.width = (height > 0 ? (winScroll / height) * 100 : 0) + '%';
+            }
+
+            /* ---- 우측 페이지 목차 h2 스크롤스파이 + breadcrumb ---- */
+            var headings = Array.prototype.slice.call(document.querySelectorAll('main.main-content .sub-title'));
+            var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.page-toc-link'));
+            var crumbCurrent = document.querySelector('.breadcrumb .crumb-current');
+            var crumbSep = document.querySelector('.breadcrumb .crumb-sep');
+            // 헤딩은 scroll-margin-top(=topbar 56 + 8 = 64) 위치에 안착하므로, 임계값을
+            // 그보다 약간 크게 잡아야 막 클릭해 도착한 헤딩이 곧바로 active로 판정된다(off-by-one 방지).
+            var topOffset = 96; // topbar + scroll-margin + 여유
+            var activeId = null;
+
+            function syncSpy() {
+                if (!headings.length) return;
+                var current = null;
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= topOffset) {
+                        current = headings[i];
+                    }
+                }
+                var id = current ? current.getAttribute('id') : null;
+                if (id === activeId) return;
+                activeId = id;
+                tocLinks.forEach(function (link) {
+                    link.classList.toggle('active', !!id && link.getAttribute('href') === '#' + id);
+                });
+                if (crumbCurrent) {
+                    crumbCurrent.textContent = current ? current.textContent.trim() : '';
+                    if (crumbSep) crumbSep.style.visibility = current ? 'visible' : 'hidden';
+                }
+            }
+
+            var ticking = false;
+            function onScroll() {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(function () {
+                    updateProgress();
+                    syncSpy();
+                    ticking = false;
+                });
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll, { passive: true });
+            updateProgress();
+            syncSpy();
+
+            /* ---- 이미지 로드 인지 앵커 스크롤 (스크린샷 시프트 방지) ---- */
+            function scrollToTarget(el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', ' ');
+            }
+            document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    var id = this.getAttribute('href').substring(1);
+                    if (!id) return;
+                    var target = document.getElementById(decodeURIComponent(id));
+                    if (!target) return;
+                    e.preventDefault();
+                    var imgs = target.querySelectorAll('.lazy-scroll-img');
+                    if (!imgs.length) { scrollToTarget(target); return; }
+                    var loaded = 0;
+                    function done() { loaded++; if (loaded === imgs.length) scrollToTarget(target); }
+                    imgs.forEach(function (img) {
+                        if (img.complete) { done(); }
+                        else { img.addEventListener('load', done); img.addEventListener('error', done); }
+                    });
+                });
+            });
+
+            /* ---- ⌘K 검색 ---- */
+            var dialog = document.getElementById('searchDialog');
+            var input = document.getElementById('searchInput');
+            var resultsEl = document.getElementById('searchResults');
+            var emptyEl = document.getElementById('searchEmpty');
+            var chunks = null, activeIdx = -1;
+
+            function loadIndex() {
+                if (chunks) return Promise.resolve();
+                return fetch('search-index.json').then(function (r) { return r.json(); })
+                    .then(function (data) { chunks = data; })
+                    .catch(function () { chunks = []; });
+            }
+            function openSearch() {
+                if (!dialog || typeof dialog.showModal !== 'function') return;
+                loadIndex().then(function () {
+                    if (!dialog.open) dialog.showModal();
+                    input.value = '';
+                    render('');
+                    setTimeout(function () { input.focus(); }, 0);
+                });
+            }
+            function hrefOf(c) { return c.anchor ? c.file + '#' + c.anchor : c.file; }
+            function snippet(text, q) {
+                var i = (text || '').toLowerCase().indexOf(q);
+                if (i < 0) return null;
+                var s = Math.max(0, i - 30), e = Math.min(text.length, i + q.length + 40);
+                return {
+                    pre: (s > 0 ? '…' : '') + text.slice(s, i),
+                    hit: text.slice(i, i + q.length),
+                    post: text.slice(i + q.length, e) + (e < text.length ? '…' : '')
+                };
+            }
+            function render(q) {
+                q = q.trim().toLowerCase();
+                resultsEl.innerHTML = '';
+                var items;
+                if (!q) {
+                    items = (chunks || []).slice(0, 10).map(function (c) { return { c: c, snip: null }; });
+                } else {
+                    var scored = [];
+                    (chunks || []).forEach(function (c) {
+                        var inHead = (c.heading || '').toLowerCase().indexOf(q) !== -1;
+                        var inPage = (c.page || '').toLowerCase().indexOf(q) !== -1;
+                        var snip = snippet(c.text, q);
+                        if (inHead || inPage || snip) {
+                            scored.push({ c: c, rank: inHead ? 0 : (inPage ? 1 : 2), snip: snip });
+                        }
+                    });
+                    scored.sort(function (a, b) { return a.rank - b.rank; });
+                    var seen = {}; items = [];
+                    scored.forEach(function (it) {
+                        var h = hrefOf(it.c);
+                        if (!seen[h]) { seen[h] = 1; items.push(it); }
+                    });
+                    items = items.slice(0, 30);
+                }
+                activeIdx = items.length ? 0 : -1;
+                items.forEach(function (it, i) {
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = hrefOf(it.c);
+                    if (i === 0) a.classList.add('active');
+                    var t = document.createElement('span'); t.className = 'res-title';
+                    t.textContent = it.c.heading || it.c.page;
+                    var cx = document.createElement('span'); cx.className = 'res-ctx';
+                    cx.textContent = it.c.page;
+                    a.appendChild(t); a.appendChild(cx);
+                    if (it.snip) {
+                        var sn = document.createElement('span'); sn.className = 'res-snip';
+                        sn.appendChild(document.createTextNode(it.snip.pre));
+                        var mk = document.createElement('mark'); mk.textContent = it.snip.hit;
+                        sn.appendChild(mk);
+                        sn.appendChild(document.createTextNode(it.snip.post));
+                        a.appendChild(sn);
+                    }
+                    li.appendChild(a);
+                    resultsEl.appendChild(li);
+                });
+                emptyEl.hidden = !(q && !items.length);
+            }
+            function move(d) {
+                var links = resultsEl.querySelectorAll('a');
+                if (!links.length) return;
+                links[activeIdx] && links[activeIdx].classList.remove('active');
+                activeIdx = (activeIdx + d + links.length) % links.length;
+                links[activeIdx].classList.add('active');
+                links[activeIdx].scrollIntoView({ block: 'nearest' });
+            }
+            if (dialog) {
+                document.querySelectorAll('[data-search-open]').forEach(function (b) {
+                    b.addEventListener('click', openSearch);
+                });
+                document.addEventListener('keydown', function (e) {
+                    if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); openSearch(); }
+                });
+                input.addEventListener('input', function () { render(input.value); });
+                input.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+                    else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+                    else if (e.key === 'Enter') {
+                        var a = resultsEl.querySelectorAll('a')[activeIdx];
+                        if (a) { e.preventDefault(); window.location.href = a.getAttribute('href'); }
+                    }
+                });
+            }
+
+            /* ---- 맨 위로 ---- */
+            var topBtn = document.getElementById('topBtn');
+            if (topBtn) topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+
+    <script>
+        // 조회수 기록 (기존 동작 보존)
+        fetch('https://script.google.com/macros/s/AKfycbwSqARqOln42Iglcb_HzhlrUqcyaHrsGinaiyh-mplMjHTTGJxO-oR2znPItvYdkyV9/exec')
+            .then(function () { console.log('조회수 기록 성공'); })
+            .catch(function (e) { console.error('기록 실패', e); });
+    </script>
+
+</body>
+
+</html>
